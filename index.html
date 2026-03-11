@@ -86,69 +86,122 @@
 
 <table style="width:100%;border-collapse:collapse;">
 
-<!-- Project 1: TMECH -->
-<tr>
-  <td style="padding:20px;vertical-align:top;text-align:left;">
-    <span class="papertitle">Design and Development of a New Bio-inspired 7-DOF Untethered Biped Wall-Climbing Robot</span>
-    <br>
-    <a href="https://scholar.google.com/citations?user=a8ydfPIAAAAJ&hl=zh-CN&oi=ao">Weijian Zhang</a>,
-    Boyu Wang, Zikang Li, Yuan Yin,
-    <a href="https://scholar.google.com/citations?user=LRlpdo8AAAAJ&hl=zh-CN">Lap Mou Tam</a>,
-    <a href="https://scholar.google.com/citations?user=6T8qsVgAAAAJ&hl=zh-CN">Qingsong Xu</a>
-    <br>
-    <em><a href="https://ieeexplore.ieee.org/abstract/document/11216423">IEEE/ASME Transactions on Mechatronics</a></em>, Accepted, 2025
-    <br><br>
-    <div style="width:100%;text-align:center;">
-      <img src="images/TMECH.jpg" alt="TMECH Figure" 
-           style="max-width:100%;height:auto;border-radius:6px;display:inline-block;">
-    </div>
-  </td>
-</tr>
-
-
-  <!-- Project 2: TASE -->
-  <tr>
-    <td style="padding:20px;vertical-align:top;text-align:left;">
-      <span class="papertitle">Design and Development of a New Biped Robotic System for Exoskeleton-Structure Window Cleaning</span>
+  <!-- Project 1: TMECH -->
+  <tr onmouseout="tmech_stop()" onmouseover="tmech_start()">
+    <td style="padding:16px;width:22%;vertical-align:middle;">
+      <div class="one">
+        <div class="two" id="tmech_image">
+          <video width="100%" muted autoplay loop playsinline>
+            <source src="images/TMECH.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <img src="images/TMECH.jpg" alt="TMECH Figure">
+      </div>
+      <script type="text/javascript">
+        function tmech_start() {
+          document.getElementById('tmech_image').style.opacity = "1";
+        }
+        function tmech_stop() {
+          document.getElementById('tmech_image').style.opacity = "0";
+        }
+        tmech_stop();
+      </script>
+    </td>
+    <td style="padding:16px;width:78%;vertical-align:middle;text-align:left;">
+      <span class="papertitle">Design and Development of a New Bio-inspired 7-DOF Untethered Biped Wall-Climbing Robot</span>
       <br>
-	<a href="https://scholar.google.com/citations?user=a8ydfPIAAAAJ&hl=zh-CN&oi=ao">Weijian Zhang</a>,
-	  Zikang Li, Xianli Wang, Yonghao Huang, Junan Li,
+      <a href="https://scholar.google.com/citations?user=a8ydfPIAAAAJ&hl=zh-CN&oi=ao">Weijian Zhang</a>,
+      Boyu Wang, Zikang Li, Yuan Yin,
       <a href="https://scholar.google.com/citations?user=LRlpdo8AAAAJ&hl=zh-CN">Lap Mou Tam</a>,
       <a href="https://scholar.google.com/citations?user=6T8qsVgAAAAJ&hl=zh-CN">Qingsong Xu</a>
       <br>
-            <em><a href="https://ieeexplore.ieee.org/abstract/document/10508312" target="_blank">
-        IEEE Transactions on Automation Science and Engineering
-      </a></em>, 2024, 22: 3160–3171
+      <em><a href="https://ieeexplore.ieee.org/abstract/document/11216423">IEEE/ASME Transactions on Mechatronics</a></em>, Accepted, 2025
       <br><br>
-      <div style="width:100%;text-align:center;">
-        <img src="images/TASE_FIG1.png" alt="TASE Figure" 
-             style="max-width:100%;height:auto;border-radius:6px;display:inline-block;">
+      <p>
+        This work presents a new bio-inspired 7-DOF untethered biped wall-climbing robot with improved climbing mobility and adaptability.
+      </p>
+    </td>
+  </tr>
+
+  <!-- Project 2: TASE -->
+  <tr onmouseout="tase_stop()" onmouseover="tase_start()">
+    <td style="padding:16px;width:22%;vertical-align:middle;">
+      <div class="one">
+        <div class="two" id="tase_image">
+          <video width="100%" muted autoplay loop playsinline>
+            <source src="images/TASE.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <img src="images/TASE_FIG1.png" alt="TASE Figure">
       </div>
+      <script type="text/javascript">
+        function tase_start() {
+          document.getElementById('tase_image').style.opacity = "1";
+        }
+        function tase_stop() {
+          document.getElementById('tase_image').style.opacity = "0";
+        }
+        tase_stop();
+      </script>
+    </td>
+    <td style="padding:16px;width:78%;vertical-align:middle;text-align:left;">
+      <span class="papertitle">Design and Development of a New Biped Robotic System for Exoskeleton-Structure Window Cleaning</span>
+      <br>
+      <a href="https://scholar.google.com/citations?user=a8ydfPIAAAAJ&hl=zh-CN&oi=ao">Weijian Zhang</a>,
+      Zikang Li, Xianli Wang, Yonghao Huang, Junan Li,
+      <a href="https://scholar.google.com/citations?user=LRlpdo8AAAAJ&hl=zh-CN">Lap Mou Tam</a>,
+      <a href="https://scholar.google.com/citations?user=6T8qsVgAAAAJ&hl=zh-CN">Qingsong Xu</a>
+      <br>
+      <em><a href="https://ieeexplore.ieee.org/abstract/document/10508312" target="_blank">IEEE Transactions on Automation Science and Engineering</a></em>, 2024, 22: 3160–3171
+      <br><br>
+      <p>
+        This paper introduces a new biped robotic system for exoskeleton-structure window cleaning with enhanced stability and efficiency.
+      </p>
     </td>
   </tr>
 
   <!-- Project 3: AIS -->
-  <tr>
-    <td style="padding:20px;vertical-align:top;text-align:left;">
+  <tr onmouseout="ais_stop()" onmouseover="ais_start()">
+    <td style="padding:16px;width:22%;vertical-align:middle;">
+      <div class="one">
+        <div class="two" id="ais_image">
+          <video width="100%" muted autoplay loop playsinline>
+            <source src="images/AIS.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <img src="images/AIS_FIG1.png" alt="AIS Figure">
+      </div>
+      <script type="text/javascript">
+        function ais_start() {
+          document.getElementById('ais_image').style.opacity = "1";
+        }
+        function ais_stop() {
+          document.getElementById('ais_image').style.opacity = "0";
+        }
+        ais_stop();
+      </script>
+    </td>
+    <td style="padding:16px;width:78%;vertical-align:middle;text-align:left;">
       <span class="papertitle">Deep Q-Network-Based Hierarchical Path Planning of a Biped Wall-Climbing Robot for Window Cleaning</span>
       <br>
-	  <a href="https://scholar.google.com/citations?user=a8ydfPIAAAAJ&hl=zh-CN&oi=ao">Weijian Zhang</a>,
- 	  Zikang Li,
+      <a href="https://scholar.google.com/citations?user=a8ydfPIAAAAJ&hl=zh-CN&oi=ao">Weijian Zhang</a>,
+      Zikang Li,
       <a href="https://scholar.google.com/citations?user=LRlpdo8AAAAJ&hl=zh-CN">Lap Mou Tam</a>,
       <a href="https://scholar.google.com/citations?user=6T8qsVgAAAAJ&hl=zh-CN">Qingsong Xu</a>
       <br>
-            <em><a href="https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aisy.202400745" target="_blank">
-        Advanced Intelligent Systems
-      </a></em>, 2400745, 2025
+      <em><a href="https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aisy.202400745" target="_blank">Advanced Intelligent Systems</a></em>, 2400745, 2025
       <br><br>
-      <div style="width:100%;text-align:center;">
-        <img src="images/AIS_FIG1.png" alt="AIS Figure" 
-             style="max-width:100%;height:auto;border-radius:6px;display:inline-block;">
-      </div>
+      <p>
+        This work proposes a Deep Q-Network-based hierarchical path planning method for a biped wall-climbing robot in window-cleaning tasks.
+      </p>
     </td>
   </tr>
 
 </table>
+
 
 
 <!-- Publications and Patents -->

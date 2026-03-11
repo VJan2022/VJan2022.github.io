@@ -85,7 +85,6 @@
 
 <style>
   .media-block {
-    position: relative;
     width: 100%;
     text-align: center;
   }
@@ -95,25 +94,28 @@
     display: inline-block;
     width: 100%;
     max-width: 100%;
+    aspect-ratio: 16 / 9;   /* 关键：统一显示比例 */
+    overflow: hidden;       /* 关键：超出的部分裁掉，不压到下一行 */
+    border-radius: 6px;
   }
 
   .media-preview img,
   .media-preview video {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
+    object-fit: cover;      /* 关键：铺满容器，必要时裁切 */
     border-radius: 6px;
   }
 
   .media-preview .video-layer {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    inset: 0;
     opacity: 0;
     transition: opacity 0.3s ease;
   }
 </style>
+
 
 		<table style="width:100%;border-collapse:collapse;">
 

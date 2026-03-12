@@ -67,19 +67,18 @@
 
 	  
 	  
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <!-- <p>
-                  I'm interested in the legged climbing robotics system design and control <span class="highlight">highlighted</span>.
-                </p> -->
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-	<table style="width:100%;border-collapse:collapse;">
+	  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		  <tr>
+		  <td style="padding:20px;width:100%;vertical-align:middle">
+			<h2>Research</h2>
+			<!-- <p>
+			  I'm interested in the legged climbing robotics system design and control <span class="highlight">highlighted</span>.
+			</p> -->
+		  </td>
+		</tr>
+	  </tbody></table>
+	  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<table style="width:100%;border-collapse:collapse;">
 
 <!-- Project 1: TMECH -->
 <tr>
@@ -94,56 +93,81 @@
     <em><a href="https://ieeexplore.ieee.org/abstract/document/11216423">IEEE/ASME Transactions on Mechatronics</a></em>, Accepted, 2025
     <br><br>
     <div style="width:100%;text-align:center;">
-      <img src="images/TMECH.jpg" alt="TMECH Figure" 
+      <!-- 
+        视频尺寸适应说明：
+        - max-width:100%  → 宽度不超过父容器，随页面缩放自动收缩
+        - width:100%      → 在父容器内撑满横向空间（可改为固定值如 width:640px 以限制最大宽度）
+        - height:auto     → 高度按视频原始宽高比自动计算，无需手动指定
+        - 若需限制最大高度，可额外加 max-height:480px 并配合 object-fit:contain
+      -->
+      <video
+        src="images/TMECH.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+        style="width:100%;max-width:100%;height:auto;border-radius:6px;display:inline-block;">
+      </video>
+    </div>
+  </td>
+</tr>
+
+<!-- Project 2: TASE -->
+<tr>
+  <td style="padding:20px;vertical-align:top;text-align:left;">
+    <span class="papertitle">Design and Development of a New Biped Robotic System for Exoskeleton-Structure Window Cleaning</span>
+    <br>
+    <a href="https://scholar.google.com/citations?user=a8ydfPIAAAAJ&hl=zh-CN&oi=ao">Weijian Zhang</a>,
+    Zikang Li, Xianli Wang, Yonghao Huang, Junan Li,
+    <a href="https://scholar.google.com/citations?user=LRlpdo8AAAAJ&hl=zh-CN">Lap Mou Tam</a>,
+    <a href="https://scholar.google.com/citations?user=6T8qsVgAAAAJ&hl=zh-CN">Qingsong Xu</a>
+    <br>
+    <em><a href="https://ieeexplore.ieee.org/abstract/document/10508312" target="_blank">
+      IEEE Transactions on Automation Science and Engineering
+    </a></em>, 2024, 22: 3160–3171
+    <br><br>
+    <div style="width:100%;text-align:center;">
+      <!-- 
+        视频尺寸适应说明：同 TMECH，此处同样使用响应式写法。
+        若两个视频原始分辨率不同，浏览器会各自按其宽高比缩放，
+        视觉上高度可能不一致——如需对齐高度，可统一设置 height:360px
+        并加 object-fit:cover（裁剪填满）或 object-fit:contain（留边保全）。
+      -->
+      <video
+        src="images/TASE.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+        style="width:100%;max-width:100%;height:auto;border-radius:6px;display:inline-block;">
+      </video>
+    </div>
+  </td>
+</tr>
+
+<!-- Project 3: AIS（保持图片不变）-->
+<tr>
+  <td style="padding:20px;vertical-align:top;text-align:left;">
+    <span class="papertitle">Deep Q-Network-Based Hierarchical Path Planning of a Biped Wall-Climbing Robot for Window Cleaning</span>
+    <br>
+    <a href="https://scholar.google.com/citations?user=a8ydfPIAAAAJ&hl=zh-CN&oi=ao">Weijian Zhang</a>,
+    Zikang Li,
+    <a href="https://scholar.google.com/citations?user=LRlpdo8AAAAJ&hl=zh-CN">Lap Mou Tam</a>,
+    <a href="https://scholar.google.com/citations?user=6T8qsVgAAAAJ&hl=zh-CN">Qingsong Xu</a>
+    <br>
+    <em><a href="https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aisy.202400745" target="_blank">
+      Advanced Intelligent Systems
+    </a></em>, 2400745, 2025
+    <br><br>
+    <div style="width:100%;text-align:center;">
+      <img src="images/AIS_FIG1.png" alt="AIS Figure"
            style="max-width:100%;height:auto;border-radius:6px;display:inline-block;">
     </div>
   </td>
 </tr>
 
-
-  <!-- Project 2: TASE -->
-  <tr>
-    <td style="padding:20px;vertical-align:top;text-align:left;">
-      <span class="papertitle">Design and Development of a New Biped Robotic System for Exoskeleton-Structure Window Cleaning</span>
-      <br>
-	<a href="https://scholar.google.com/citations?user=a8ydfPIAAAAJ&hl=zh-CN&oi=ao">Weijian Zhang</a>,
-	  Zikang Li, Xianli Wang, Yonghao Huang, Junan Li,
-      <a href="https://scholar.google.com/citations?user=LRlpdo8AAAAJ&hl=zh-CN">Lap Mou Tam</a>,
-      <a href="https://scholar.google.com/citations?user=6T8qsVgAAAAJ&hl=zh-CN">Qingsong Xu</a>
-      <br>
-            <em><a href="https://ieeexplore.ieee.org/abstract/document/10508312" target="_blank">
-        IEEE Transactions on Automation Science and Engineering
-      </a></em>, 2024, 22: 3160–3171
-      <br><br>
-      <div style="width:100%;text-align:center;">
-        <img src="images/TASE_FIG1.png" alt="TASE Figure" 
-             style="max-width:100%;height:auto;border-radius:6px;display:inline-block;">
-      </div>
-    </td>
-  </tr>
-
-  <!-- Project 3: AIS -->
-  <tr>
-    <td style="padding:20px;vertical-align:top;text-align:left;">
-      <span class="papertitle">Deep Q-Network-Based Hierarchical Path Planning of a Biped Wall-Climbing Robot for Window Cleaning</span>
-      <br>
-	  <a href="https://scholar.google.com/citations?user=a8ydfPIAAAAJ&hl=zh-CN&oi=ao">Weijian Zhang</a>,
- 	  Zikang Li,
-      <a href="https://scholar.google.com/citations?user=LRlpdo8AAAAJ&hl=zh-CN">Lap Mou Tam</a>,
-      <a href="https://scholar.google.com/citations?user=6T8qsVgAAAAJ&hl=zh-CN">Qingsong Xu</a>
-      <br>
-            <em><a href="https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/aisy.202400745" target="_blank">
-        Advanced Intelligent Systems
-      </a></em>, 2400745, 2025
-      <br><br>
-      <div style="width:100%;text-align:center;">
-        <img src="images/AIS_FIG1.png" alt="AIS Figure" 
-             style="max-width:100%;height:auto;border-radius:6px;display:inline-block;">
-      </div>
-    </td>
-  </tr>
-
 </table>
+
 
 
 
